@@ -17,11 +17,12 @@ public static void main(String[] args) {
 		numbers.add(Integer.parseInt(sc.nextLine()));
 	Question2 qns2=new Question2();
 	System.out.println(qns2.listWithDuplicates(numbers));
-
+	sc.close();
 }
 public List<Integer> listWithDuplicates(List<Integer> number){
-	List <Integer> L1 = null;
+	List <Integer> L1 = new ArrayList<Integer>();
 	//write your code here !! change the L1 to required value
+	L1.addAll(number);
 	return L1 ;
 }
 }
